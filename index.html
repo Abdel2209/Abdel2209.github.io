@@ -1,50 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SRA Agency — Morocco's TikTok Marketing Specialists</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRA Agency - Morocco's TikTok Marketing Specialists</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        .tiktok-gradient {
+            background-image: linear-gradient(to right, #25F4EE, #FE2C55, #000000);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <img src="assets/logo.png" alt="SRA Agency Logo" class="logo">
-  </header>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="assets/logo.png" alt="SRA Agency Logo" class="w-8 h-8">
+                <span class="font-bold text-xl bg-clip-text text-transparent tiktok-gradient">SRA Agency</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-pink-400 transition">About</a>
+                <a href="#services" class="hover:text-pink-400 transition">Services</a>
+                <a href="#portfolio" class="hover:text-pink-400 transition">Portfolio</a>
+                <a href="#team" class="hover:text-pink-400 transition">Team</a>
+                <a href="#contact" class="hover:text-pink-400 transition">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <span class="cursor-pointer text-2xl">☰</span>
+            </div>
+        </div>
+    </nav>
 
-  <section class="hero">
-    <img src="assets/flyer-bg.png" alt="Flyer Background" class="hero-bg">
-    <img src="assets/flyer.png" alt="TikTok Marketing Flyer" class="hero-image">
-  </section>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent z-10"></div>
+        <img src="assets/flyer-bg.png" alt="TikTok Marketing" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 py-32 px-6 container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4" data-aos="fade-up">
+                SRA Agency — Morocco's TikTok Marketing Specialists
+            </h1>
+            <p class="text-xl md:text-2xl text-pink-300 mb-8" data-aos="fade-up" data-aos-delay="100">
+                From zero followers to viral success
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                <a href="#contact" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition hover-scale">
+                    Get Free Consultation
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white font-bold py-3 px-8 rounded-full transition hover-scale">
+                    Start Your Growth Today
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <section class="results">
-    <h2>Before &amp; After</h2>
-    <div class="before-after">
-      <img src="assets/before-after.png" alt="Before and After Transformation">
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="assets/flyer.png" alt="TikTok Marketing" class="rounded-xl shadow-2xl hover-scale">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6 text-black">We Turn Moroccan Brands Into TikTok Sensations</h2>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Specializing in Moroccan fashion and beauty businesses, we've mastered the art of viral TikTok content that resonates with local audiences. Our strategies have delivered proven results like 300% follower growth in just 30 days.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-pink-500 mr-3 mt-1">✓</span>
+                            <p class="text-gray-700">Deep understanding of Moroccan TikTok trends and culture</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-pink-500 mr-3 mt-1">✓</span>
+                            <p class="text-gray-700">Proven track record with fashion and beauty brands</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-pink-500 mr-3 mt-1">✓</span>
+                            <p class="text-gray-700">Data-driven approach with weekly performance reports</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section class="team">
-    <h2>Meet Our Team</h2>
-    <div class="member">
-      <img src="assets/founder.png" alt="Founder Abdelbarie Slimani">
-      <h3>Abdelbarie Slimani</h3>
-      <p>Founder &amp; Strategy Director</p>
-    </div>
-    <div class="member">
-      <img src="assets/sarah.png" alt="Content Creator Sarah">
-      <h3>Sarah</h3>
-      <p>Content Creator &amp; Designer</p>
-    </div>
-    <div class="member">
-      <img src="assets/karim.png" alt="Ads Specialist Karim">
-      <h3>Karim</h3>
-      <p>Ads Specialist &amp; Analyst</p>
-    </div>
-  </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-black">Before & After Results</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Real transformations for Moroccan fashion and beauty businesses
+                </p>
+            </div>
+            
+            <div class="flex justify-center" data-aos="fade-up">
+                <img src="assets/before-after.png" alt="Before and After Transformation" class="rounded-xl shadow-2xl max-w-full hover-scale">
+            </div>
+        </div>
+    </section>
 
-  <footer class="site-footer">
-    <p>Contact us for your free TikTok audit and growth consultation:</p>
-    <p>WhatsApp: +212 619-578490 | Email: abdelbarie.slimani+sra@gmail.com</p>
-  </footer>
+    <!-- Team Section -->
+    <section id="team" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-black">Meet Our Creative Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Passionate TikTok experts dedicated to growing your Moroccan brand
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale" data-aos="fade-up">
+                    <img src="assets/founder.png" alt="Abdelbarie Slimani" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Abdelbarie Slimani</h3>
+                        <p class="text-pink-500 mb-3">Founder & Strategy Director</p>
+                        <p class="text-gray-600">
+                            With 5+ years in digital marketing, Abdelbarie specializes in crafting viral TikTok strategies for Moroccan brands.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/sarah.png" alt="Sarah Benani" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Sarah Benani</h3>
+                        <p class="text-pink-500 mb-3">Content Creator</p>
+                        <p class="text-gray-600">
+                            Sarah's creative eye and understanding of Moroccan aesthetics produce engaging content that resonates locally.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/karim.png" alt="Karim El Fassi" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Karim El Fassi</h3>
+                        <p class="text-pink-500 mb-3">Ads Specialist</p>
+                        <p class="text-gray-600">
+                            Karim optimizes ad campaigns to ensure maximum ROI for our Moroccan clientele.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-4 text-black">Ready for TikTok Growth?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Contact us for a free TikTok audit and consultation
+                </p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-pink-500">📱</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Call/WhatsApp</h4>
+                                    <a href="tel:+212619578490" class="text-gray-600 hover:text-pink-500 transition">+212 619-578490</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-pink-500">📧</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Email</h4>
+                                    <a href="mailto:abdelbarie.slimani+sra@gmail.com" class="text-gray-600 hover:text-pink-500 transition">abdelbarie.slimani+sra@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-pink-500">📍</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Location</h4>
+                                    <p class="text-gray-600">Residence Habiba Etage 6 N°50, Tanger, Morocco</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Free TikTok Audit</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div>
+                                <label for="brand" class="block text-gray-700 font-medium mb-2">Brand Name</label>
+                                <input type="text" id="brand" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">How Can We Help?</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-lg transition">
+                                Request Free Audit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <img src="assets/logo.png" alt="SRA Logo" class="w-12 h-12">
+                        <span class="font-bold text-xl bg-clip-text text-transparent tiktok-gradient">SRA Agency</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Morocco's TikTok Marketing Specialists</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-gray-400 mb-2">📱 WhatsApp: +212 619-578490</p>
+                    <p class="text-gray-400">📧 abdelbarie.slimani+sra@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-500">© 2023 SRA Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize components
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
 </body>
 </html>
